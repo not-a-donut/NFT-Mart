@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy and sell NFTs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://kit.fontawesome.com/cbf74a5bf6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-list">
+                <li class="navbar-item"><i class="fa-solid fa-microchip navbar-logo fa-xl"></i></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Market</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Explore</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Sell your NFTs</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Support us</a></li>
+            </ul>
+            <div class="navbar-login">
+                <i class="fa-solid fa-user logout-element fa-xl user-profile"></i>
+                <button class="navbar-logout-button logout-element"><a class="logout-link" href="#">Logout</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-phone">
+        <div class="navbar-phone-top">
+            <li class="phone-hamburger navbar-phone-top-element" onclick="displayNavbar()"><i class="fa-solid fa-bars fa-xl"></i></li>
+            <li class="navbar-phone-top-element navbar-phone-top-element-logo"><i class="fa-solid fa-microchip navbar-logo fa-xl"></i></li>
+        </div>
+    </div>
+    <div id="navbar-phone-bottom">
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Home</a></li>
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Market</a></li>
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Explore</a></li>
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Sell your NFTs</a></li>
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Support us</a></li>
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Your profile</a></li>
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Logout</a></li>
+    </div>
+    <hr>
+    <section class="homepage">
+        <div class="homepage-left">
+            <h1 class="primary-heading homepage-left-element">NFT Mart - Create, trade and buy NFTs.</h1>
+            <p class="primary-caption homepage-left-element">A unique all-rounder NFT marketplace for all you crypto-heads. Keep track of your NFTs and enjoy bidding on the 5000+ varieties of NFTs offered by us.</p>
+            <button class="navbar-logout-button logout-element homepage-left-seemore"><a class="logout-link" href="#">Start exploring</a></button>
+            <i class="fa-solid fa-arrow-down homepage-left-arrow"></i>
+        </div>
+        <div class="homepage-right">
+            <img src="/images/NFT-homepage.png" alt="" class="homepage-image">
+        </div>
+        
+    </section>
+    <script>
+        function displayNavbar() {
+            var navbarPhoneBottom = document.getElementById("navbar-phone-bottom");
+            if (navbarPhoneBottom.style.display === "flex") 
+            {
+                navbarPhoneBottom.style.display = "none";
+            } 
+            else
+            {
+                navbarPhoneBottom.style.display = "flex";
+                navbarPhoneBottom.style.borderBottom = "1px solid #3E2567";
+            }
+        }
+    </script>
+</body>
+
+</html>
