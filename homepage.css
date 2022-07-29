@@ -9,10 +9,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #1C1A41;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
+    background: url('images/background.png');
 }
 .navbar{
     /* border: 2px solid red; */
