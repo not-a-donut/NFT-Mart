@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -34,8 +39,10 @@
     </div>
     <div class="navbar-phone">
         <div class="navbar-phone-top">
-            <li class="phone-hamburger navbar-phone-top-element" onclick="displayNavbar()"><i class="fa-solid fa-bars fa-xl"></i></li>
-            <li class="navbar-phone-top-element navbar-phone-top-element-logo"><i class="fa-solid fa-microchip navbar-logo fa-xl"></i></li>
+            <li class="phone-hamburger navbar-phone-top-element" onclick="displayNavbar()"><i
+                    class="fa-solid fa-bars fa-xl"></i></li>
+            <li class="navbar-phone-top-element navbar-phone-top-element-logo"><i
+                    class="fa-solid fa-microchip navbar-logo fa-xl"></i></li>
         </div>
     </div>
     <div id="navbar-phone-bottom">
@@ -48,27 +55,48 @@
         <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Logout</a></li>
     </div>
     <hr>
-    <section class="homepage">
-        <div class="homepage-left">
-            <h1 class="primary-heading homepage-left-element">NFT Mart - Create, trade and buy NFTs.</h1>
-            <p class="primary-caption homepage-left-element">A unique all-rounder NFT marketplace for all you crypto-heads. Keep track of your NFTs and enjoy bidding on the 5000+ varieties of NFTs offered by us.</p>
-            <button class="navbar-logout-button logout-element homepage-left-seemore"><a class="logout-link" href="#">Start exploring</a></button>
-            <i class="fa-solid fa-arrow-down homepage-left-arrow"></i>
+    <section class="landing-page">
+        <div class="landing-page-left">
+            <div class="landing-page-left-heading">
+                <span class="primary-heading landing-page-left-text">NFT Mart, Create, trade and buy&nbsp;</span>
+                <span class="primary-heading landing-page-left-text nft-span">NFTs</span>
+            </div>
+            <p class="primary-caption landing-page-left-text">A unique all-rounder NFT marketplace for all you
+                crypto-heads. Keep track of your NFTs and enjoy bidding on the 5000+ varieties of NFTs offered by us.
+            </p>
+            <div class="stats">
+                <div class="stats-element" id="stats-element-1">
+                    <img src="/images/users-alt-free-icon-font_1.png" alt="" srcset=""class = "stats-element-element">
+                    <p class="stats-number stats-element-element">200K+</p>
+                    <p class="stats-text stats-element-element">COMMUNITY</p>
+                </div>
+                <div class="stats-element" id="stats-element-2">
+                    <img src="/images/nft_1.png" alt="" srcset=""class = "stats-element-element">
+                    <p class="stats-number stats-element-element">5000+</p>
+                    <p class="stats-text stats-element-element">COLLECTIONS</p>     
+                </div>
+                <div class="stats-element" id="stats-element-3">
+                    <img src="/images/transaction.png" alt="" srcset=""class = "stats-element-element">
+                    <p class="stats-number stats-element-element">40K+</p>
+                    <p class="stats-text stats-element-element">SOLD/MONTH</p>
+                </div>
+            </div>
         </div>
-        <div class="homepage-right">
-            <img src="images/NFT-homepage.png" alt="" class="homepage-image">
+        <div class="landing-page-right">
+            <img src="/images/landing-page-image.png" alt="" srcset="">
+            <div class="buttons">
+                <button class="buttons-element" id="explore"><a href="#" class="button-link">EXPLORE NOW</a></button>
+                <button class="buttons-element" id="wallet"><a href="#" class="button-link">CONNECT WALLET</a></button>
+            </div>
         </div>
-        
     </section>
     <script>
         function displayNavbar() {
             var navbarPhoneBottom = document.getElementById("navbar-phone-bottom");
-            if (navbarPhoneBottom.style.display === "flex") 
-            {
+            if (navbarPhoneBottom.style.display === "flex") {
                 navbarPhoneBottom.style.display = "none";
-            } 
-            else
-            {
+            }
+            else {
                 navbarPhoneBottom.style.display = "flex";
                 navbarPhoneBottom.style.borderBottom = "1px solid #3E2567";
             }
