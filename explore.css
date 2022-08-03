@@ -201,6 +201,9 @@ body{
         position: absolute;
         right: 0;
     }
+    .navbar-phone-top-element-logo img{
+        width: 30px;
+    }
     #navbar-phone-bottom{
         width: 100vw;
         /* border: 2px solid red; */
