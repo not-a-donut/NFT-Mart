@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy and sell NFTs</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="homepage.css">
+    <title>Your profile</title>
+    <link rel="stylesheet" href="profile.css">
     <script src="https://kit.fontawesome.com/cbf74a5bf6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +24,7 @@
     <div class="navbar">
         <div class="navbar-container">
             <ul class="navbar-list">
-                <li class="navbar-item"><img src="/images/nft_1.png" class = "navbar-logo" alt=""></i></li>
+                <li class="navbar-item"><img src="/images/nft_1.png" class="navbar-logo" alt=""></i></li>
                 <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
                 <li class="navbar-item"><a href="explore.html" class="navbar-link">Explore</a></li>
                 <li class="navbar-item"><a href="store.html" class="navbar-link">Store</a></li>
@@ -40,55 +39,33 @@
     <div class="navbar-phone">
         <div class="navbar-phone-top">
             <li class="phone-hamburger navbar-phone-top-element" onclick="displayNavbar()"><i
-                    class="fa-solid fa-bars fa-xl"></i></li>
+            class="fa-solid fa-bars fa-xl"></i></li>
             <li class="navbar-phone-top-element navbar-phone-top-element-logo"><img src="/images/nft_1.png" alt=""></li>
         </div>
     </div>
     <div id="navbar-phone-bottom">
-        <li class="navbar-item-phone"><a href="home.html" class="navbar-link-phone">Home</a></li>
+        <li class="navbar-item-phone"><a href="index.html" class="navbar-link-phone">Home</a></li>
         <li class="navbar-item-phone"><a href="explore.html" class="navbar-link-phone">Explore</a></li>
-        <li class="navbar-item-phone"><a href="store.html" class="navbar-link-phone">Store</a></li>
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Store</a></li>
         <!-- <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Sell your NFTs</a></li> -->
         <li class="navbar-item-phone"><a href="supportus.html" class="navbar-link-phone">Support us</a></li>
         <li class="navbar-item-phone"><a href="profile.html" class="navbar-link-phone">Your profile</a></li>
         <li class="navbar-item-phone"><a href="signin.html" class="navbar-link-phone">Logout</a></li>
     </div>
     <hr>
-    <section class="landing-page">
-        <div class="landing-page-left">
-            <div class="landing-page-left-heading">
-                <span class="primary-heading landing-page-left-text">NFT Mart, Create, trade and buy&nbsp;</span>
-                <span class="primary-heading landing-page-left-text nft-span">NFTs</span>
-            </div>
-            <p class="primary-caption landing-page-left-text">A unique all-rounder NFT marketplace for all you
-                crypto-heads. Keep track of your NFTs and enjoy bidding on the 5000+ varieties of NFTs offered by us.
-            </p>
-            <div class="stats">
-                <div class="stats-element" id="stats-element-1">
-                    <img src="/images/users-alt-free-icon-font_1.png" alt="" srcset=""class = "stats-element-element">
-                    <p class="stats-number stats-element-element">200K+</p>
-                    <p class="stats-text stats-element-element">COMMUNITY</p>
-                </div>
-                <div class="stats-element" id="stats-element-2">
-                    <img src="/images/nft_1.png" alt="" srcset=""class = "stats-element-element">
-                    <p class="stats-number stats-element-element">5000+</p>
-                    <p class="stats-text stats-element-element">COLLECTIONS</p>     
-                </div>
-                <div class="stats-element" id="stats-element-3">
-                    <img src="/images/transaction.png" alt="" srcset=""class = "stats-element-element">
-                    <p class="stats-number stats-element-element">40K+</p>
-                    <p class="stats-text stats-element-element">SOLD/MONTH</p>
-                </div>
+    <div class="container">
+        <div class="container-left">
+            <div class="container-left-profile">
+                <img src="https://source.unsplash.com/400x400/?face" alt="">
+                <div class="desc"><span class="profile-desc">Most priced possession - </span><span class="profile-desc orange">28 ETH</span></div>
+                <div class="desc"><span class="profile-desc">Most priced possession - </span><span class="profile-desc orange">28 ETH</span></div>
+                <div class="desc"><span class="profile-desc">Most priced possession - </span><span class="profile-desc orange">28 ETH</span></div>
+                <h1 class="username">
+                    @CRYPTOHEAD101
+                </h1>
             </div>
         </div>
-        <div class="landing-page-right">
-            <img src="/images/landing-page-image.png" alt="" srcset="">
-            <div class="buttons">
-                <button class="buttons-element" id="explore"><a href="explore.html" class="button-link">EXPLORE NOW</a></button>
-                <button class="buttons-element" id="wallet"><a href="#" class="button-link">CONNECT WALLET</a></button>
-            </div>
-        </div>
-    </section>
+    </div>
     <script>
         function displayNavbar() {
             var navbarPhoneBottom = document.getElementById("navbar-phone-bottom");
@@ -99,6 +76,15 @@
                 navbarPhoneBottom.style.display = "flex";
                 navbarPhoneBottom.style.borderBottom = "1px solid #3E2567";
             }
+        }
+        function scrollleft() {
+            var left = document.querySelector(".scroll-images");
+            left.scrollBy(300, 0)
+        }
+
+        function scrollright() {
+            var right = document.querySelector(".scroll-images");
+            right.scrollBy(-300, 0)
         }
     </script>
 </body>
