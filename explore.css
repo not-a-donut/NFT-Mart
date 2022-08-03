@@ -1,0 +1,402 @@
+/* root style */
+/* root style */
+/* root style */
+/* root style */
+/* root style */
+/* root style */
+/* root style */
+/* root style */
+/* root style */
+/* root style */
+/* root style */
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Josefin sans'; */
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    /* border: 2px solid red; */
+    /* overflow-x: auto; */
+}
+body{
+    background-color: #1d1a35;
+}
+
+
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+/* navbar styling  */
+
+
+.navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    width: 100%;
+    /* font-family: 'Montserrat'; */
+    /* position: fixed;
+    width: 100%; */
+}
+.navbar-container{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    /* justify-content: center; */
+}
+.navbar-list{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+.navbar-phone{
+    display: none;
+}
+.navbar-item{
+    margin: 1rem 2rem;
+}
+.navbar-link{
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    transition: all;
+    transition-duration: 0.2s;
+    font-family: 'Montserrat';
+}
+/* navbar elements hovering animation:  */
+/* navbar elements hovering animation:  */
+/* navbar elements hovering animation:  */
+/* navbar elements hovering animation:  */
+/* navbar elements hovering animation:  */
+.navbar-link:hover{
+    color: rgb(219, 219, 219);
+    transition: all;
+    transition-duration: 0.2s;
+}
+.navbar-logo{
+    width: 45px;
+}
+.navbar-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    transition: transform 0.4s;
+    background-color: rgb(219, 219, 219);
+    transform-origin: right;
+}
+.navbar-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navbar-list{
+    /* border: 2px solid yellow; */
+    width: 80%;
+    height: 100%;
+}
+.navbar-item{
+    /* border: 2px solid black; */
+}
+.navbar-login{
+    /* border: 2px solid yellow; */
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 20%;
+}
+.logout-element{
+    margin: 0px 0.9rem;
+    font-family: 'Josefin sans';
+}
+.navbar-logout-button{
+    background: none;
+    padding: 0.4rem 1rem; 
+    margin-right: 2rem;
+    /* border-radius: 20px; */
+    border-image: linear-gradient(to right, rgb(112, 108, 184), rgb(102, 53, 119));
+    border-image-slice: 1;
+}
+.navbar-logout-button:hover{
+    background: linear-gradient(90deg, rgb(112, 108, 184) 0%, rgb(102, 53, 119) 100%);
+    /* border: none; */
+    box-shadow: 0px 0px 30px 1px rgb(112, 108, 184);
+}
+.logout-link{
+    font-size: 22px;
+    font-weight: 300;
+}
+#navbar-phone-bottom{
+    display: none;
+}
+.user-profile{
+    /* background-color: rgb(102, 53, 119); */
+}
+.line{
+    display: none;
+}
+
+@media only screen and (max-width: 400px) {
+    #navbar-phone-bottom{
+        width: 100vw !important;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    body{
+        background-color: #1d1a35;
+        background-image: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-phone{
+        display: flex;
+        /* border: 2px solid white; */
+        /* padding: 1rem; */
+        flex-direction: row;
+        height: 4rem;
+        position: fixed;
+        width: 100%;
+        background-color: #1C1A41;
+        z-index: 100;
+    }
+    .navbar-phone-top{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 1px solid #3E2567;
+        height: 100%;
+        align-items: center;
+    }
+    .navbar-phone-top-element{
+        /* border: 2px solid red; */
+        height: 100%;
+        margin: 0 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-phone-top-element-logo{
+        position: absolute;
+        right: 0;
+    }
+    #navbar-phone-bottom{
+        width: 100vw;
+        /* border: 2px solid red; */
+        /* position: absolute; */
+        position: fixed;
+        top: 4rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #1C1A41;
+        z-index: 100;
+        /* border-top: 2px solid #3E2567; */
+    }
+    .navbar-item-phone{
+        margin: 1.3rem 0rem;
+    }
+    .navbar-link-phone{
+        font-family: 'Montserrat';
+    }
+    .primary-heading{
+        margin-top: 5rem !important;
+        font-size: 50px !important;
+        margin-bottom: 0rem !important;
+    }
+    .card{
+        transform: scale(0.8);
+        margin: -10px !important;
+    }
+    .scroll-images{
+        width: 50%;
+    }
+    #live-auction{
+        margin-top: 0rem !important;
+    }
+}
+hr{
+    width: 90%;
+    margin: auto;
+    border: 1px solid #5b3f77;
+    margin-bottom: 2rem;
+}
+.card{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding-top: 1rem;
+    width: 16rem;
+    min-width: 16rem;
+    margin: 0px 3rem;
+    padding-bottom: 0.4rem;
+    cursor: pointer;
+    overflow: hidden;
+    height: 21rem;
+}
+.card-image{
+    width: 85%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin-bottom: 0.5rem;
+}
+.card-name{
+    font-weight: 600;
+    font-size: 24px;
+    margin: 1px 0px 15px 0px;
+}
+.card-desc{
+    display: flex;
+    /* border: 2px solid red; */
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.card-desc img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.card-user{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 25px 0px 10px;
+}
+.card-user-id{
+    font-size: 12px;
+    color: #9eb4ff;
+    font-weight: 600;
+}
+.card-user-name{
+    font-weight: 600;
+    font-size: 16px;
+}
+.add-to-cart-button{
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+}
+.add-to-cart-button a{
+    font-size: 12px;
+}
+.add-to-cart-button:hover{
+    background-color: #4764d1;
+    border: 2px solid #4764d1;
+}
+.slide-section{
+    width: 90%;
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-container{
+    position: relative;
+    width: 90%;
+}
+.scroll-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+.slide-container::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(90deg, #1d1a35, transparent);
+    /* border-left: 2px solid #4a4953; */
+}
+.slide-container::after{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 150px;
+    background-image: linear-gradient(-90deg, #1d1a35, transparent);
+    /* border-right: 2px solid #4a4953; */
+}
+.scroll-images::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.control-button{
+    background: none;
+    border: none;
+}
+.control-logo{
+    color: rgba(177, 175, 227, 0.533);
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.control-logo:hover{
+    color: rgba(177, 175, 227, 1);
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.primary-heading{
+    font-size: 40px;
+    font-weight: 700;
+    /* border: 2px solid red; */
+    text-align: center;
+    /* margin-bottom: 2rem; */
+    margin: 2rem auto;
+    /* color: rgb(113, 214, 214); */
+}
+#card1 .card-user-name{
+    font-size: 14px;
+}
+#card4 .card-user-name{
+    font-size: 14px;
+}
+#mid-page-hr{
+    margin-top: 2rem;
+}
+.card:hover{
+    background-color: rgb(255, 255, 255, 0.5);
+}
