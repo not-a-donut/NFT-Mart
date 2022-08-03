@@ -24,6 +24,7 @@
 }
 body{
     background-color: #1d1a35;
+    width: 100vw;
 }
 
 
@@ -239,6 +240,27 @@ body{
     #live-auction{
         margin-top: 0rem !important;
     }
+    .container{
+        flex-direction: column;
+        /* border: 2px solid red; */
+    }
+    .container-left{
+        width: 100% !important;
+        /* border: 2px solid red; */
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .container-left-profile{
+        width: 90% !important;
+        margin-top: 5rem !important;
+    }
+    .container-left img{
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .container-right{
+        width: 100% !important;
+    }
 }
 hr{
     width: 90%;
@@ -330,6 +352,9 @@ hr{
 .slide-container{
     position: relative;
     width: 90%;
+    border: 1px solid rgba(177, 175, 227, 0.186);
+    padding: 2rem;
+    border-radius: 5rem;
 }
 .scroll-images{
     width: 100%;
@@ -405,25 +430,91 @@ hr{
 }
 .container{
     width: 100%;
-    border: 2px solid yellowgreen;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid yellowgreen; */
 }
 .container-left{
     width: 40%;
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 .container-left-profile{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 80%;
     display: flex;
     flex-direction: column;
     /* justify-content: center;s */
     align-items: center;
+    background-color: rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
 }
 .container-left-profile img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.orange{
+    color: orange;
+}
+.desc{
+    margin-top: 0.6rem;
+}
+.username{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: black;
+    font-size: 1.3rem;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+}
+.container-right{
+    width: 50%;
+    /* border: 2px solid red; */
+}
+.input-element::placeholder{
+    color: #5b5869;
+    font-weight: 600;
+}
+.input-element{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #5b5869;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+.check-container span{
+    color: #5b5869;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.check-container{
+    margin-bottom: 4rem;
+}
+.sign-in-button{
+    background-color: #4764d1;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+}
+.sign-in-link{
+    font-size: 24px;
+}
+.log-in{
+    margin-bottom: 7rem;
+}
+.sign-in-caption{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+.sign-in-caption span a{
+    color: #4265e4;
+    font-weight: 600;
 }

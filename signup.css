@@ -19,13 +19,12 @@
     list-style-type: none;
     box-sizing: border-box;
     font-family: 'Montserrat';
-    /* border: 2px solid red; */
+    border: 2px solid red;
     /* overflow-x: auto; */
 }
 body{
     background-color: #1d1a35;
     width: 100vw;
-    overflow-x: hidden;
 }
 
 

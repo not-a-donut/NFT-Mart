@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign in</title>
     <link rel="stylesheet" href="signin.css">
     <script src="https://kit.fontawesome.com/cbf74a5bf6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <section class="display-container">
-        <div class="display">
-            <div class="logo">
-                <i class="logo-image fa-solid fa-microchip navbar-logo fa-2xl logo-element"></i>
-                <span class = "logo-element logo-text">NFT mart</span>
-            </div>
-            <div class="image">
-                <img src="/images/login-image.png" alt="error loading image" class = "image-image">
-                <p class="primary-caption">The home to the biggest NFT collections in the world</p>
+    <div class="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-list">
+                <li class="navbar-item"><img src="/images/nft_1.png" class="navbar-logo" alt=""></i></li>
+                <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="explore.html" class="navbar-link">Explore</a></li>
+                <li class="navbar-item"><a href="store.html" class="navbar-link">Store</a></li>
+                <li class="navbar-item"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="navbar-link">Support us</a></li>
+            </ul>
+            <div class="navbar-login">
+                <i class="fa-solid fa-user logout-element fa-xl user-profile"
+                    onclick="location.href = 'profile.html';"></i>
+                <button class="navbar-logout-button logout-element"><a class="logout-link" href="signin.html">Logout</a></button>
             </div>
         </div>
-    </section>
-    <section class="login-container">
+    </div>
+    <div class="navbar-phone">
+        <div class="navbar-phone-top">
+            <li class="phone-hamburger navbar-phone-top-element" onclick="displayNavbar()"><i
+                    class="fa-solid fa-bars fa-xl"></i></li>
+            <li class="navbar-phone-top-element navbar-phone-top-element-logo"><img src="/images/nft_1.png" alt=""></li>
+        </div>
+    </div>
+    <div id="navbar-phone-bottom">
+        <li class="navbar-item-phone"><a href="index.html" class="navbar-link-phone">Home</a></li>
+        <li class="navbar-item-phone"><a href="explore.html" class="navbar-link-phone">Explore</a></li>
+        <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Store</a></li>
+        <!-- <li class="navbar-item-phone"><a href="#" class="navbar-link-phone">Sell your NFTs</a></li> -->
+        <li class="navbar-item-phone"><a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="navbar-link-phone">Support us</a></li>
+        <li class="navbar-item-phone"><a href="profile.html" class="navbar-link-phone">Your profile</a></li>
+        <li class="navbar-item-phone"><a href="signin.html" class="navbar-link-phone">Logout</a></li>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="container-left">
+            <div class="container-left-profile">
+                <h1 class="primary-heading log-in">LOG IN</h1>
+                <input type="email" class = "email input-element" placeholder="email">
+                <input type="password" class = "password input-element" placeholder="password">
+                <div class="check-container">
+                    <input type="checkbox" name="check" class="check">
+                    <span>always keep me logged in</span>
+                </div>
+                <button type="submit" class = "sign-in-button"><a href="index.html" class="sign-in-link">SIGN IN</a></button>
+                <p class="sign-in-caption">don't have an account ?<span><a href="signup.html"> &nbsp;sign up</a></span></p>
+            </div>
+        </div>
+        <div class="container-right">
+            <img src="/images/cyborg-nft-planet-with-circles-around-it.png" alt="">
+        </div>
+    </div>
+    <hr id="mid-page-hr">
+    <script>
+        function displayNavbar() {
+            var navbarPhoneBottom = document.getElementById("navbar-phone-bottom");
+            if (navbarPhoneBottom.style.display === "flex") {
+                navbarPhoneBottom.style.display = "none";
+            }
+            else {
+                navbarPhoneBottom.style.display = "flex";
+                navbarPhoneBottom.style.borderBottom = "1px solid #3E2567";
+            }
+        }
+        function scrollleft() {
+            var left = document.querySelector(".scroll-images");
+            left.scrollBy(300, 0)
+        }
 
-    </section>
+        function scrollright() {
+            var right = document.querySelector(".scroll-images");
+            right.scrollBy(-300, 0)
+        }
+    </script>
 </body>
+
 </html>
